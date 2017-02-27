@@ -1,0 +1,34 @@
+<!--<ion-header>-->
+  <!--<ion-navbar>-->
+    <!--<ion-title>-->
+      <!--Ionic Blank-->
+    <!--</ion-title>-->
+  <!--</ion-navbar>-->
+<!--</ion-header>-->
+
+<!--<ion-content padding>-->
+  <!--The world is your oyster.-->
+  <!--<p>-->
+    <!--If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.-->
+  <!--</p>-->
+<!--</ion-content>-->
+
+
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      World News
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-list  >
+    <ion-item text-wrap *ngFor="let item of newsData" >
+      <p >{{item.data.title}}</p>
+    </ion-item>
+  </ion-list>
+</ion-content>
